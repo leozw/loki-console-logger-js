@@ -1,0 +1,32 @@
+{
+  "name": "loki-console-logger",
+  "version": "1.0.2",
+  "description": "Console.log interceptor that sends logs to Loki with batching and resilience.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leozw/loki-console-logger.git"
+  },
+  "keywords": [
+    "loki",
+    "logger",
+    "console",
+    "batch",
+    "ecs",
+    "observability"
+  ],
+  "author": "Leonardo Zwirtes",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.13.16",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.8.4"
+  }
+}
